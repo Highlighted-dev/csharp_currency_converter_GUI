@@ -1,0 +1,23 @@
+﻿<Window x:Class="csharp_currency_converter_GUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:csharp_currency_converter_GUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="80*"></ColumnDefinition>
+            <ColumnDefinition Width="30*"></ColumnDefinition>
+            <ColumnDefinition Width="80*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <ComboBox SelectedItem="EUR" Name="ComboBox_currency1" Grid.Column="1" HorizontalAlignment="Left" Margin="0,55,0,0" VerticalAlignment="Top" Width="124"/>
+        <Image Source="C:\Users\Bartosz\source\repos\csharp_currency_converter_GUI\csharp_currency_converter_GUI\strzalka.png" Grid.Column="1" HorizontalAlignment="Left" Height="27" Margin="48,82,0,0" VerticalAlignment="Top" Width="27"/>
+        <ComboBox SelectedItem="USD" x:Name="ComboBox_currency2" Grid.Column="1" HorizontalAlignment="Left" Margin="0,114,0,0" VerticalAlignment="Top" Width="124" />
+        <TextBox x:Name="TextBox_moneyToExchange" TextAlignment="Center" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="124" Grid.Column="1" Margin="0,27,0,0"/>
+        <TextBox x:Name="TextBox_exchangedMoney" IsReadOnly="True" TextAlignment="Center" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="124" Grid.Column="1" Margin="0,141,0,0"/>
+        <Button Click="button_Click" Content="Exchange" Grid.Column="1" HorizontalAlignment="Left" Margin="25,175,0,0" VerticalAlignment="Top" Width="75"/>
+    </Grid>
+</Window>
