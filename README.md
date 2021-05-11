@@ -6,7 +6,7 @@ It's a Currency converter with simple GUI in C#. Servers with API sometimes are 
 
 <h1>How to run</h1>
 
-You can just clone it in visual studio if you have git extension, or you can download .zip from relases, extract it and open in virtual studio
+IF you want only .exe file, you can go to relase->"Only .exe" and download the files from there. Also you can the clone full project in visual studio if you have git extension, or download .zip from relases/"Visual studio relase", extract it and open in virtual studio
 
 
 
